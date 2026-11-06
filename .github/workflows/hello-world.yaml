@@ -6,11 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      name: print greetinf
+      name: print greeting
       run: echo "Hello,GitHub Actions"
 
       name: print multiple lines
       run: |
         echo "This is going to run shell scripts"
         echo "Today runner is $RUNNER_OS"
-        echo "The reop is $GITHUB_REPOSITORY"
+        echo "The repp is $GITHUB_REPOSITORY"
