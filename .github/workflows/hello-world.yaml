@@ -1,16 +1,17 @@
 name: hello-world
 
-on : workflow_dispatch
+on: workflow_dispatch
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: print greeting
-      run: echo "Hello,GitHub Actions"
+        run: echo "Hello,GitHub Actions"
 
       - name: print multiple lines
-      run: |
-        echo "This is going to run shell scripts"
-        echo "Today runner is $RUNNER_OS"
-        echo "The repp is $GITHUB_REPOSITORY"
+        run: |
+          
+          echo "This is going to run shell scripts"
+          echo "Today runner is $RUNNER_OS"
+          echo "The repp is $GITHUB_REPOSITORY"
