@@ -6,10 +6,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      name: print greeting
+      - name: print greeting
       run: echo "Hello,GitHub Actions"
 
-      name: print multiple lines
+      - name: print multiple lines
       run: |
         echo "This is going to run shell scripts"
         echo "Today runner is $RUNNER_OS"
