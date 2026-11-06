@@ -1,0 +1,16 @@
+name: hello-world
+
+on : workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      name: print greetinf
+      run: echo "Hello,GitHub Actions"
+
+      name: print multiple lines
+      run: |
+        echo "This is going to run shell scripts"
+        echo "Today runner is $RUNNER_OS"
+        echo "The reop is $GITHUB_REPOSITORY"
